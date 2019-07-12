@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+#box{
+	border:1px solid #bbbbbb;
+	width:310px;
+	height:110px;
+	overflow:hidden;
+	position: relative;
+}
+
+.tile{
+	width:300px;
+	height:100px;
+	margin:5px;
+	position: absolute;
+	display:none;
+}
+
+@keyframes Show {
+  0% {
+    transform: translateX(105%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes Hide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-105%);
+  }
+}
+
+#slideShow{
+	animation-duration: 1s;
+	animation-name: Show;
+	display:block;
+}
+
+#slideHide{
+	animation-duration: 1s;
+	animation-name: Hide;
+	display:block;
+}
+
+#cBox{
+	margin:0 105px;
+	color:#bbbbbb;
+	font-size:12px;
+}
+
